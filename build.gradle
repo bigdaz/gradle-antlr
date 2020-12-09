@@ -1,0 +1,19 @@
+plugins {
+    id 'antlr'
+}
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    antlr "org.antlr:antlr:3.5.2"
+}
+
+generateGrammarSource {
+    include (
+        'TLexer.g',
+        'TParser.g',
+        'TTree.g'
+    )
+}

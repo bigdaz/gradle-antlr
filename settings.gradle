@@ -1,0 +1,15 @@
+plugins {
+  id "com.gradle.enterprise" version "3.5"
+}
+
+gradleEnterprise {
+    server = "https://localhost"
+    allowUntrustedServer = true
+
+    buildScan {
+        publishAlways()
+        captureTaskInputFiles = true
+    }
+}
+
+rootProject.name = 'antlr-cache'
