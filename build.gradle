@@ -16,4 +16,6 @@ generateGrammarSource {
         'TParser.g',
         'TTree.g'
     )
+    // Track all antlr sources as inputs, even those not explicitly included
+    inputs.dir 'src/main/antlr'
 }
